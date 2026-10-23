@@ -114,7 +114,7 @@ export default function App() {
       <Nav/>
       <Section id="home" className="pt-32">
         <motion.div initial={{opacity:0,y:20}} animate={{opacity:1,y:0}} transition={{duration:0.6}} className="text-center">
-          <img src="/1000010420.jpg" alt="Portrait of Louie Frank Borbe" className="mx-auto mb-6 w-32 h-32 md:w-40 md:h-40 rounded-full object-cover border-2 border-green-500" />\n          <h1 className="text-4xl md:text-6xl font-bold">Louie Frank Borbe</h1>
+          <img src="/1000010420.jpg" alt="Portrait of Louie Frank Borbe" className="mx-auto mb-6 w-32 h-32 md:w-40 md:h-40 rounded-full object-cover border-2 border-green-500" />          <h1 className="text-4xl md:text-6xl font-bold">Louie Frank Borbe</h1>
           <p className="mt-4 text-xl text-green-400">Freelance Web & Software Developer</p>
           <p className="mt-4 max-w-2xl mx-auto text-gray-300">I build custom digital solutions based on your business requirements — websites, POS, inventory, and more.</p>
           <div className="mt-8 flex justify-center gap-4">
@@ -224,7 +224,7 @@ export default function App() {
         <div className="mt-8 space-y-2 text-gray-300">
           <p><Mail className="inline mr-2 text-green-400" size={16}/><a href="mailto:louie.f.borbe@gmail.com" className="hover:text-green-400">louie.f.borbe@gmail.com</a></p>
           <p><a href="https://github.com/LouieBorbs" target="_blank" rel="noreferrer" className="hover:text-green-400">GitHub</a></p>
-          <p><a href="https://www.linkedin.com/in/louie-frank-borbe-b7a183385" target="_blank" rel="noreferrer" className="hover:text-green-400">LinkedIn</a></p>\n          <p><a href="https://web.facebook.com/louiefrank.borbe" target="_blank" rel="noopener noreferrer" className="hover:text-green-400">Facebook: Louie Frank Borbe</a></p>
+          <p><a href="https://www.linkedin.com/in/louie-frank-borbe-b7a183385" target="_blank" rel="noreferrer" className="hover:text-green-400">LinkedIn</a></p>          <p><a href="https://web.facebook.com/louiefrank.borbe" target="_blank" rel="noopener noreferrer" className="hover:text-green-400">Facebook: Louie Frank Borbe</a></p>
         </div>
       </Section>
 
