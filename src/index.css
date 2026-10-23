@@ -34,3 +34,14 @@ select {
 a {
   -webkit-tap-highlight-color: transparent;
 }
+
+body {
+  background: linear-gradient(120deg, #080d17, #0f1b2e, #080d17);
+  background-size: 200% 200%;
+  animation: bgShift 12s ease infinite;
+}
+@keyframes bgShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
