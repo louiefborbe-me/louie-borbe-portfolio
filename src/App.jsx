@@ -191,6 +191,13 @@ export default function App() {
         <p className="text-gray-300">Custom quotations based on scope, complexity, and requirements. No fixed prices.</p>
       </Section>
 
+      <Section id="cta" className="text-center">
+        <div className="bg-green-500/10 border border-green-500/30 rounded-2xl p-10">
+          <h2 className="text-3xl font-bold mb-4">Let's work together</h2>
+          <p className="text-gray-300 mb-6">Have a project in mind? Tell me your requirements and I'll help you build it.</p>
+          <button onClick={()=>document.getElementById("contact")?.scrollIntoView({behavior:"smooth"})} className="bg-green-500 hover:bg-green-600 text-black font-semibold px-6 py-3 rounded-lg">Start a Project</button>
+        </div>
+      </Section>
       <Section id="contact">
         <h2 className="text-3xl font-bold mb-8">Contact</h2>
         {!isConfigured && (
