@@ -15,12 +15,11 @@ const serviceTypes = ["Website Development","POS System","Inventory Management",
 
 const services = [
   { icon: Globe, title: "Website Development", desc: "Responsive, modern websites tailored to your business goals." },
-  { icon: ShoppingCart, title: "POS Systems", desc: "Point-of-sale systems for retail and food businesses." },
-  { icon: BarChart3, title: "Inventory & Stock Management", desc: "Track products, stock levels, and movements in real time." },
-  { icon: Code2, title: "Custom Business Software", desc: "Bespoke tools built around your exact workflows." },
-  { icon: Smartphone, title: "Mobile Applications", desc: "Cross-platform mobile apps with Flutter." },
-  { icon: Database, title: "Database Design & API Integration", desc: "Reliable data models and REST API connections." },
-  { icon: Wrench, title: "Website Maintenance", desc: "Updates, fixes, and ongoing support for your site." },
+  { icon: Code2, title: "Custom Web Applications & Business Systems", desc: "Custom web applications, admin dashboards, authentication, and business workflow solutions." },
+  { icon: Smartphone, title: "Mobile Application Development", desc: "Cross-platform mobile applications built with Flutter and Dart." },
+  { icon: Database, title: "Database & API Integration", desc: "Database integration, REST APIs, and reliable backend data management." },
+  { icon: Wrench, title: "WordPress Development & Website Maintenance", desc: "WordPress website updates, content management, troubleshooting, and ongoing maintenance." },
+  { icon: CheckCircle2, title: "Attendance & Management Systems", desc: "QR-based attendance tracking, student management workflows, and database-powered information systems." },
 ];
 
 const solutions = [
@@ -137,7 +136,7 @@ export default function App() {
               <s.icon className="text-green-400 mb-3" size={28}/>
               <h3 className="font-semibold mb-2">{s.title}</h3>
               <p className="text-gray-400 text-sm">{s.desc}</p>
-              <button onClick={()=>preselect(s.title==="Website Development"?"Website Development":s.title==="POS Systems"?"POS System":s.title==="Inventory & Stock Management"?"Inventory Management":s.title==="Custom Business Software"?"Custom Business Software":s.title==="Mobile Applications"?"Mobile Application":s.title==="Database Design & API Integration"?"Database/API Integration":"Website Maintenance")} className="mt-4 text-green-400 text-sm flex items-center gap-1">Request this <ChevronRight size={14}/></button>
+              <button onClick={()=>preselect(s.title==="Website Development"?"Website Development":s.title==="Custom Web Applications & Business Systems"?"Custom Business Software":s.title==="Mobile Application Development"?"Mobile Application":s.title==="Database & API Integration"?"Database/API Integration":s.title==="WordPress Development & Website Maintenance"?"Website Maintenance":"Other")} className="mt-4 text-green-400 text-sm flex items-center gap-1">Request this <ChevronRight size={14}/></button>
             </div>
           ))}
         </div>
@@ -207,7 +206,7 @@ export default function App() {
           <form onSubmit={submit} className="space-y-4 max-w-2xl">
             <input className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3" placeholder="Client name *" value={form.name} onChange={e=>setForm({...form,name:e.target.value})}/>
             <input className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3" placeholder="Client email *" value={form.email} onChange={e=>setForm({...form,email:e.target.value})}/>
-            <select className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3" value={form.projectType} onChange={e=>setForm({...form,projectType:e.target.value})}>
+            <select className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white" value={form.projectType} onChange={e=>setForm({...form,projectType:e.target.value})}>
               <option value="">Project type *</option>
               {serviceTypes.map(t=><option key={t} value={t}>{t}</option>)}
             </select>
@@ -244,6 +243,8 @@ export default function App() {
     </div>
   );
 }
+
+
 
 
 
