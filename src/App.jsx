@@ -125,7 +125,7 @@ export default function App() {
 
       <Section id="about">
         <h2 className="text-3xl font-bold mb-6">About</h2>
-        <p className="text-gray-300 max-w-3xl">BS Information Technology graduate from STI College Legazpi, Batch 2026. Based in Legazpi City, Albay, Philippines. Freelance web developer and former WordPress developer and licensing intern at Quanby Solutions Inc. Built the Oro-High Portal e-learning and attendance system. I help businesses turn requirements into working digital products.</p>
+        <p className="text-gray-300 max-w-3xl mx-auto text-center">BS Information Technology graduate from STI College Legazpi, Batch 2026, based in Legazpi City, Albay, Philippines. Freelance web developer with experience building responsive websites, web applications, authentication flows, database integrations, and WordPress solutions. Former WordPress developer and licensing intern at Quanby Solutions Inc., handling website maintenance, updates, troubleshooting, and licensing support. I help businesses turn requirements into reliable, user-friendly digital products.</p>
       </Section>
 
       <Section id="services">
@@ -243,6 +243,7 @@ export default function App() {
     </div>
   );
 }
+
 
 
 
