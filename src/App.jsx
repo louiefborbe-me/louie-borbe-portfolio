@@ -207,8 +207,8 @@ export default function App() {
             <input className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3" placeholder="Client name *" value={form.name} onChange={e=>setForm({...form,name:e.target.value})}/>
             <input className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3" placeholder="Client email *" value={form.email} onChange={e=>setForm({...form,email:e.target.value})}/>
             <select className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white" value={form.projectType} onChange={e=>setForm({...form,projectType:e.target.value})}>
-              <option value="">Project type *</option>
-              {serviceTypes.map(t=><option key={t} value={t}>{t}</option>)}
+              <option value="" className="bg-[#080d17] text-white">Project type *</option>
+              {serviceTypes.map(t=><option key={t} value={t} className="bg-[#080d17] text-white">{t}</option>)}
             </select>
             <textarea className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3" rows={5} placeholder="Project description and requirements *" value={form.description} onChange={e=>setForm({...form,description:e.target.value})}/>
             <input className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3" placeholder="Optional budget in PHP (or 'Not sure yet')" value={form.budget} onChange={e=>setForm({...form,budget:e.target.value})}/>
@@ -243,6 +243,7 @@ export default function App() {
     </div>
   );
 }
+
 
 
 
