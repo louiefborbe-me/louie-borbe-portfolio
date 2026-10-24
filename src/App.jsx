@@ -24,7 +24,7 @@ const services = [
 
 const solutions = [
   { icon: ShoppingCart, title: "POS System (Example)", desc: "Sales tracking, receipts, and daily reports concept." },
-  { icon: BarChart3, title: "Inventory Dashboard (Example)", desc: "Stock monitoring and low-stock alerts concept." },
+  { icon: BarChart3, title: "Inventory Management (Example)", desc: "Stock monitoring and low-stock alerts concept." },
   { icon: BarChart3, title: "Business Reporting (Example)", desc: "Revenue and operations reports concept." },
   { icon: Calendar, title: "Booking System (Example)", desc: "Appointment scheduling and calendar concept." },
   { icon: Globe, title: "Business Website (Example)", desc: "Marketing site with contact and services concept." },
@@ -243,6 +243,7 @@ export default function App() {
     </div>
   );
 }
+
 
 
 
