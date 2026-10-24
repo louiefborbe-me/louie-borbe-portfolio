@@ -198,7 +198,8 @@ export default function App() {
           <button onClick={()=>document.getElementById("contact")?.scrollIntoView({behavior:"smooth"})} className="bg-green-500 hover:bg-green-600 text-black font-semibold px-6 py-3 rounded-lg">Start a Project</button>
         </div>
       </Section>
-      <Section id="contact">
+      <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto px-4 py-20">
+      <Section id="contact" className="py-0">
         <h2 className="text-3xl font-bold mb-8">Contact</h2>
         {!isConfigured && (
           <div className="mb-6 p-4 bg-yellow-500/10 border border-yellow-500/40 rounded-lg text-yellow-300 text-sm">
@@ -243,6 +244,7 @@ export default function App() {
           <div className="bg-white/5 border border-white/10 rounded-xl p-6"><h3 className="font-semibold mb-2">Do you provide ongoing support?</h3><p className="text-gray-400 text-sm">Yes, maintenance and support can be included based on agreement.</p></div>
         </div>
       </Section>
+      </div>
       <footer className="border-t border-white/10 py-10 px-4">
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between gap-6 text-sm text-gray-400">
           <div>© 2026 Louie Frank Borbe</div>
