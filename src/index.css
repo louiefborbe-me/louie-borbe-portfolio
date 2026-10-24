@@ -65,3 +65,20 @@ body::before {
   100% { opacity: 0.15; }
 }
 
+
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: radial-gradient(2px 2px at 20% 30%, white, transparent), radial-gradient(2px 2px at 40% 70%, white, transparent), radial-gradient(1px 1px at 60% 20%, white, transparent), radial-gradient(2px 2px at 80% 50%, white, transparent);
+  background-repeat: repeat;
+  background-size: 200px 200px;
+  opacity: 0.4;
+  animation: galaxyShift 8s linear infinite;
+  pointer-events: none;
+  z-index: 0;
+}
+@keyframes galaxyShift {
+  0% { background-position: 0 0; }
+  100% { background-position: 200px 200px; }
+}
