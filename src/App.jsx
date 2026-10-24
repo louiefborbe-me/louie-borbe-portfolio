@@ -229,8 +229,8 @@ export default function App() {
         )}
         <div className="mt-8 space-y-2 text-gray-300">
           <p><Mail className="inline mr-2 text-green-400" size={16}/><a href="mailto:louie.f.borbe@gmail.com" className="hover:text-green-400">louie.f.borbe@gmail.com</a></p>
-          <p><a href="https://github.com/LouieBorbs" target="_blank" rel="noreferrer" className="hover:text-green-400">GitHub</a></p>
-          <p><a href="https://www.linkedin.com/in/louie-frank-borbe-b7a183385" target="_blank" rel="noreferrer" className="hover:text-green-400">LinkedIn</a></p>          <p><a href="https://web.facebook.com/louiefrank.borbe" target="_blank" rel="noopener noreferrer" className="hover:text-green-400">Facebook: Louie Frank Borbe</a></p>
+          <p><a href="https://github.com/LouieBorbs" target="_blank" rel="noreferrer" className="hover:text-green-400">GitHub: LouieBorbs</a></p>
+          <p><a href="https://www.linkedin.com/in/louie-frank-borbe-b7a183385" target="_blank" rel="noreferrer" className="hover:text-green-400">LinkedIn: louie-frank-borbe-b7a183385</a></p>          <p><a href="https://web.facebook.com/louiefrank.borbe" target="_blank" rel="noopener noreferrer" className="hover:text-green-400">Facebook: Louie Frank Borbe</a></p>
         </div>
       </Section>
 
@@ -251,14 +251,15 @@ export default function App() {
           </div>
           <div className="flex gap-4">
             <a href="mailto:louie.f.borbe@gmail.com" className="hover:text-green-400">Email</a>
-            <a href="https://github.com/LouieBorbs" target="_blank" rel="noreferrer" className="hover:text-green-400">GitHub</a>
-            <a href="https://www.linkedin.com/in/louie-frank-borbe-b7a183385" target="_blank" rel="noreferrer" className="hover:text-green-400">LinkedIn</a>
+            <a href="https://github.com/LouieBorbs" target="_blank" rel="noreferrer" className="hover:text-green-400">GitHub: LouieBorbs</a>
+            <a href="https://www.linkedin.com/in/louie-frank-borbe-b7a183385" target="_blank" rel="noreferrer" className="hover:text-green-400">LinkedIn: louie-frank-borbe-b7a183385</a>
           </div>
         </div>
       </footer>
     </div>
   );
 }
+
 
 
 
