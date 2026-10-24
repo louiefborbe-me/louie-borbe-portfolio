@@ -188,7 +188,7 @@ export default function App() {
           <li>Inquiry</li><li>Requirements discussion</li><li>Quotation</li><li>Development</li><li>Testing and revisions</li><li>Delivery</li>
         </ol>
         <h3 className="text-xl font-bold mt-10 mb-4">Pricing</h3>
-        <p className="text-gray-300">Custom quotations based on scope, complexity, and requirements. No fixed prices.</p>
+        <p className="text-gray-300">Custom quotations based on scope, complexity, and requirements. Pricing may vary depending on tools, licenses, subscriptions, hosting, and other third-party services, and these choices are decided with the client. No fixed prices.</p>
       </Section>
 
       <Section id="cta" className="text-center">
@@ -250,6 +250,7 @@ export default function App() {
     </div>
   );
 }
+
 
 
 
