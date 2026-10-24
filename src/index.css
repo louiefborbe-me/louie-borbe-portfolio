@@ -121,3 +121,20 @@ body::after { animation: none !important; }
   50% { opacity: 0.8; }
 }
 body::before { animation: blinkStars 2s ease-in-out infinite alternate; }
+
+@keyframes meteor {
+  0% { transform: translate(0,0) rotate(45deg); opacity: 1; }
+  100% { transform: translate(300px,300px) rotate(45deg); opacity: 0; }
+}
+body::after {
+  content: "";
+  position: fixed;
+  top: 10%;
+  left: 10%;
+  width: 2px;
+  height: 80px;
+  background: linear-gradient(transparent, white);
+  animation: meteor 2s linear infinite;
+  pointer-events: none;
+  z-index: 0;
+}
