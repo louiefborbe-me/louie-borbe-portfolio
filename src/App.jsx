@@ -184,9 +184,9 @@ export default function App() {
           <p className="text-gray-400 text-sm">Academic project involving attendance management, role-based access, QR workflows, and database integration.</p>
         </div>
         <h3 className="text-xl font-bold mt-10 mb-4">Work Process</h3>
-        <ol className="space-y-2 text-gray-300 list-decimal list-inside">
-          <li>Inquiry</li><li>Requirements discussion</li><li>Quotation</li><li>Development</li><li>Testing and revisions</li><li>Delivery</li>
-        </ol>
+        <div className="flex flex-wrap items-center justify-center gap-3">
+          {["Inquiry","Requirements","Quotation","Development","Testing","Delivery"].map((s,i,a)=>(<><div key={s} className="bg-white/5 border border-white/10 rounded-xl p-4 text-center hover:border-green-500/50 transition min-w-[120px]"><div className="text-green-400 font-bold text-xl mb-2">{i+1}</div><div className="text-sm">{s}</div></div>{i<a.length-1&&<div className="text-green-400 text-2xl">→</div>}</>))}
+        </div>
         <h3 className="text-xl font-bold mt-10 mb-4">Pricing</h3>
         <p className="text-gray-300">Custom quotations based on scope, complexity, and requirements. Pricing may vary depending on tools, licenses, subscriptions, hosting, and other third-party services, and these choices are decided with the client. No fixed prices.</p>
       </Section>
