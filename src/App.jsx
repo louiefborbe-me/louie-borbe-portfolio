@@ -45,7 +45,7 @@ function Nav() {
   return (
     <nav className="fixed top-0 w-full z-50 bg-[#080d17]/80 backdrop-blur border-b border-white/10">
       <div className="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
-        <button onClick={()=>scrollTo("home")} className="font-bold text-green-400">Louie Borbe</button>
+        <button onClick={()=>scrollTo("home")} className="font-bold text-green-400">Louie Frank Borbe</button>
         <div className="hidden md:flex gap-6 text-sm">
           {navItems.map(n=>(
             <button key={n} onClick={()=>scrollTo(n.toLowerCase())} className="hover:text-green-400 transition">{n}</button>
@@ -259,6 +259,7 @@ export default function App() {
     </div>
   );
 }
+
 
 
 
