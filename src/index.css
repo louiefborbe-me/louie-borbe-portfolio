@@ -93,3 +93,24 @@ button:hover { animation: pulseGlow 1s infinite; }
   100% { transform: translate(200px,200px) rotate(45deg); opacity: 0; }
 }
 body::after { animation: galaxyShift 8s linear infinite, meteor 3s linear infinite; }
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image:
+    radial-gradient(1px 1px at 10% 20%, white, transparent),
+    radial-gradient(1px 1px at 30% 40%, white, transparent),
+    radial-gradient(1px 1px at 50% 60%, white, transparent),
+    radial-gradient(1px 1px at 70% 80%, white, transparent),
+    radial-gradient(1px 1px at 90% 10%, white, transparent),
+    radial-gradient(2px 2px at 15% 85%, white, transparent),
+    radial-gradient(2px 2px at 45% 15%, white, transparent),
+    radial-gradient(2px 2px at 75% 45%, white, transparent);
+  background-repeat: repeat;
+  background-size: 300px 300px;
+  opacity: 0.6;
+  animation: galaxyShift 20s linear infinite;
+  pointer-events: none;
+  z-index: 0;
+}
