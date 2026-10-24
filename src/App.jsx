@@ -125,7 +125,7 @@ export default function App() {
 
       <Section id="about">
         <h2 className="text-3xl font-bold mb-6">About</h2>
-        <p className="text-gray-300 max-w-3xl">BS Information Technology graduate from STI College Legazpi, Batch 2026. Based in Legazpi City, Albay, Philippines. I help businesses turn requirements into working digital products.</p>
+        <p className="text-gray-300 max-w-3xl">BS Information Technology graduate from STI College Legazpi, Batch 2026. Based in Legazpi City, Albay, Philippines. Freelance web developer and former WordPress developer and licensing intern at Quanby Solutions Inc. Built the Oro-High Portal e-learning and attendance system. I help businesses turn requirements into working digital products.</p>
       </Section>
 
       <Section id="services">
@@ -243,6 +243,7 @@ export default function App() {
     </div>
   );
 }
+
 
 
 
