@@ -9,7 +9,7 @@ import {
 const formId = import.meta.env.VITE_FORMSPREE_FORM_ID;
 const formspreeUrl = `https://formspree.io/f/${formId}`;
 
-const navItems = ["Home","About","Services","Solutions","Skills","Experience","Projects","Contact"];
+const navItems = ["Home","About","Services","Solutions","Skills","Experience","Projects","FAQ","Contact"];
 
 const serviceTypes = ["Website Development","POS System","Inventory Management","Custom Business Software","Mobile Application","Database/API Integration","Website Maintenance","Other"];
 
@@ -234,6 +234,15 @@ export default function App() {
         </div>
       </Section>
 
+      <Section id="faq" className="text-center">
+        <h2 className="text-3xl font-bold mb-8">FAQ</h2>
+        <div className="max-w-3xl mx-auto space-y-4 text-left">
+          <div className="bg-white/5 border border-white/10 rounded-xl p-6"><h3 className="font-semibold mb-2">How do we start?</h3><p className="text-gray-400 text-sm">Send an inquiry with your requirements; I'll discuss scope and provide a quotation.</p></div>
+          <div className="bg-white/5 border border-white/10 rounded-xl p-6"><h3 className="font-semibold mb-2">Do you offer fixed prices?</h3><p className="text-gray-400 text-sm">No, pricing depends on scope, complexity, and required tools or licenses.</p></div>
+          <div className="bg-white/5 border border-white/10 rounded-xl p-6"><h3 className="font-semibold mb-2">Can we meet in person or via Zoom?</h3><p className="text-gray-400 text-sm">Yes, I'm available for face-to-face meetings in Legazpi City or online calls.</p></div>
+          <div className="bg-white/5 border border-white/10 rounded-xl p-6"><h3 className="font-semibold mb-2">Do you provide ongoing support?</h3><p className="text-gray-400 text-sm">Yes, maintenance and support can be included based on agreement.</p></div>
+        </div>
+      </Section>
       <footer className="border-t border-white/10 py-10 px-4">
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between gap-6 text-sm text-gray-400">
           <div>© 2026 Louie Frank Borbe</div>
@@ -250,6 +259,7 @@ export default function App() {
     </div>
   );
 }
+
 
 
 
